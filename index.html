@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/music.png.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Musicplayer</title>
+
+</head>
+
+<header class="header">
+    <nav class="navigation">
+        <a href="#">Classic</a>
+        <a href="#">Pop</a>
+        <a href="#">Beats</a>
+        <a href="#">Acoustic</a>
+        <a href="#">Hip Hop</a>
+        <a href="#">Others</a>
+    </nav>
+    <button
+        style="padding: 8px; margin-left: 6px;  font-size: 17px; border-radius: 12px ; width: 60px;color:black ">Exit</button>
+
+</header>
+
+
+
+
+<body>
+   
+    <div class="topmusic">
+        <i class="fas fa-play-circle"></i> <h1>Top music</h1> <br>
+        <h4>Bethoven</h4>
+        Moonlight Sonata <br>
+        5th Symphony <br>
+        A melody of tears
+        <h4>Chopin</h4>
+        Spring waltz <br>
+        Nocture op9<br>
+        Walc a-moll
+        <h4>Mozart</h4>
+        Lacrimosa <br>
+        Requem <br>
+        Rondo Alla Turca
+
+    </div>
+    <!--topmusic-->
+    <div class="newmusic">
+        <i class="fas fa-play-circle"></i><h1>New music</h1> <br>
+        <h4>Naika</h4>
+        Belle-belle <br>
+        Deja vu <br>
+        <h4>Imagine Dragons</h4>
+        Natural <br>
+        Whatever it takes <br>
+        Radioactive <br>
+        Bad liar <br>
+        Believer <br>
+        <h4>Madonna</h4>
+        Frozen <br>
+        Hung up <br>
+
+    </div>
+    <!--classical-->
+
+
+    <div class="player-container">
+        <div class="img-container">
+            <img src="./img/dragons.jpg" alt="photo" id="foto">
+        </div>
+        <!--img-container-->
+        <h2 id="title"> Ma cherie </h2>
+        <h3 id="artist"> Naika </h3>
+        <audio src="./music/">
+        </audio>
+        <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress">
+            </div>
+            <!--progress-->
+            <div class="duration-wrapper">
+                <span id="current-time">
+                    0:00
+                </span>
+                <span id="duration">
+                    2:34
+                </span>
+            </div>
+            <!--duration-wrapper-->
+        </div>
+        <!--progress-container-->
+        <div class="player-controls">
+            <i class="fas fa-step-backward" id="prev" title="previous"></i>
+            <i class="fas fa-play main-button" id="play" title="play"></i>
+            <i class="fas fa-step-forward" id="next" title="next"></i>
+        </div>
+        <!--controls-->
+
+    </div>
+    <!--player-container-->
+
+
+
+    
+    <section class="one">
+        <input type="text" name="q" id="q" value="" placeholder="Search mp3...">
+        <button type="submit" id="submit"> </button>
+    
+    
+    </section>
+    
+
+
+
+
+
+
+
+    <script src="./script.js"></script>
+
+
+</body>
+
+</html>
